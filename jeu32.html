@@ -13,17 +13,23 @@
 div#conteneur h1 /*comparative democraties*/
 {
   position: fixed;
-  left: 60px;
-  top: 10px; 
+  left: 50px;
+  top: -5px; 
 }
 div#conteneur h1 a /*comparative democraties police*/
 { 
   font-family: avenir; 
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: 0.7px;
-  color: black;
+  color: white;
   text-decoration: none;
+}
+div#conteneur h2 /*red*/
+{ 
+  position: fixed;
+  left: 0px;
+  top: -60px;
 }
 .h2 /*CHOISIS QUI PEUT ÊTRE ÉLU*/
 {
@@ -43,7 +49,7 @@ div#conteneur h1 a /*comparative democraties police*/
   position: fixed;
   left: 500px;
   right: 500px;
-  top: 580px;
+  top: 590px;
 }  
 .h3 a/*suivant*/
 {
@@ -63,58 +69,52 @@ div#conteneur h1 a /*comparative democraties police*/
 .h4 /*image 1*/
 {
   position: fixed;
-  left: 220px;
-  top: 280px;
+  left: 170px;
+  top: 300px;
 }
 .h5 /*image 1*/
 {
   position: fixed;
-  left: 220px;
-  top: 280px;
+  left: 170px;
+  top: 300px;
 }
 .h6 /*image 2*/
 {
   position: fixed;
-  left: 470px;
-  top: 280px;
+  left: 435px;
+  top: 300px;
 }
 .h7 /*image 2*/
 {
   position: fixed;
-  left: 470px;
-  top: 280px;
+  left: 435px;
+  top: 300px;
 }
-.h7 a/*image*/
+.h7 a/*image 3*/
 {
   opacity: 1;
 }
-.h13 /*image 2*/
+.h13 /*image 3*/
 {
   position: fixed;
-  left: 700px;
-  top: 280px;
+  left: 690px;
+  top: 300px;
 }
-.h14 /*image 2*/
+.h14 /*image 3*/
 {
   position: fixed;
-  left: 700px;
-  top: 280px;
+  left: 690px;
+  top: 300px;
 }
 .h14 a/*image*/
 {
   opacity: 1;
 }
-.h8 a/*ampoule*/
-{
-  position: fixed;
-  left: 850px;
-  top: 270px;
-}
 .h9 /*texte 1*/
 {
   position: fixed;
-  left: 200px;
-  top: 500px;
+  left: 170px;
+  top: 520px;
   text-align: center; 
   font-family: avenir; 
   font-weight: bold;
@@ -127,8 +127,8 @@ div#conteneur h1 a /*comparative democraties police*/
 .h10 /*texte 2*/
 {
   position: fixed;
-  left: 450px;
-  top: 500px;
+  left: 420px;
+  top: 520px;
   text-align: center; 
   font-family: avenir; 
   font-weight: bold;
@@ -141,8 +141,8 @@ div#conteneur h1 a /*comparative democraties police*/
 .h11 /*texte 3*/
 {
   position: fixed;
-  left: 700px;
-  top: 500px;
+  left: 680px;
+  top: 520px;
   text-align: center; 
   font-family: avenir; 
   font-weight: bold;
@@ -152,12 +152,18 @@ div#conteneur h1 a /*comparative democraties police*/
   text-rendering: optimizeLegibility;
   word-break: break-word;
 }
+.h8 a/*ampoule*/
+{
+  position: fixed;
+  left: 900px;
+  top: 290px;
+}
 .h12 /*texte ampoule*/
 {
   position: fixed;
-  left: 885px;
-  right: 150px;
-  top: 330px;
+  left: 930px;
+  right: 90px;
+  top: 350px;
   text-align: left; 
   font-family: times; 
   font-weight: normal;
@@ -168,100 +174,123 @@ div#conteneur h1 a /*comparative democraties police*/
   text-rendering: optimizeLegibility;
   word-break: break-word;
 }
-ul#menu /*parcours & bibliothèque & info*/
+.h15 /*sous-titre*/
 {
   position: fixed;
-  left: 0px;
-  top: 80px; 
-  list-style-type: none ;
-  float: left ;
-  text-align: left;
+  left: 502px;
+  right: 250px;
+  top: 270px;
+  text-align: left; 
+  font-family: avenir; 
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: black;
+  text-rendering: optimizeLegibility;
+  word-break: break-word;
+}
+.retour a/*flèche retour*/
+{
+  position: fixed;
+  left: 250px;
+  top: 220px;
 }
 ul#menu /*parcours & bibliothèque & info*/
 {
   position: fixed;
-  left: 0px;
-  top: 80px; 
+  left: -5px;
+  top: 60px; 
   list-style-type: none ;
   float: left ;
   text-decoration: none;
- }
+}
 ul#menu li 
 {
   display: inline;
-  padding : 0 1.5em;
+  padding : 0 1em;
    }
 ul#menu li a
 {
   font-family: avenir;
   font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 19px;
+  letter-spacing: 0.5px;
   text-decoration: none;
-  color: black;
+  color: white;
+  text-align: center;
   text-align: center;
 }
-ul#menu li a:hover
-{
-  color: grey;
-} 
 ul#menu #en-cours a
 {
-  color: grey;
+  color: white;
+  border-bottom: 3px solid;
 } 
+ul#menu li a:hover
+{
+  color: white;
+  border-bottom: 3px solid;
+}  
 
 /*images qui changent */
 #btnControl {
     display: none;
 }
-
 #btnControl:checked + label > img {
     opacity: 0;
 }
 #btnControl2 {
     display: none;
 }
-
 #btnControl2:checked + label > img {
     opacity: 0;
 }
-
+#btnControl3 {
+    display: none;
+}
+#btnControl3:checked + label > img {
+    opacity: 0;
+}
 
 	</style>
 	<body>
 	
   <div id="conteneur">
-		<h1 id="header"><a href="comparative_democracies.html">comparative democracies</a></h1>
-    <span class = h2>NOMME LES JUGES</span>
+    <span class = h2>DÉSIGNE LES JUGES</span>
     <span class = h3><a href="jeu33.html">suivant</a></span>
-    <span class = h4><a><img src="images/parcours84.jpg" width="140px" height="auto"></a></span>
+    <span class = h4><a><img src="images/parcours44.jpg" width="150px" height="auto"></a></span>
     <span class = h5><input type="checkbox" id="btnControl"/>
-    <label class="btn" for="btnControl"><img src="images/parcours83.jpg" id="btnLeft" width="140px" height="auto"></label></span>
-    <span class = h6><a><img src="images/parcours86.jpg" width="140px" height="auto"></a></span>
+    <label class="btn" for="btnControl"><img src="images/parcours43.jpg" id="btnLeft" width="150px" height="auto"></label></span>
+    <span class = h6><a><img src="images/parcours46.jpg" width="150px" height="auto"></a></span>
     <span class = h7><input type="checkbox" id="btnControl2"/>
-    <label class="btn" for="btnControl2"><img src="images/parcours85.jpg" id="btnLeft" width="140px" height="auto"></label></span>
-    <span class = h13><a><img src="images/parcours88.jpg" width="140px" height="auto"></a></span>
-    <span class = h14><input type="checkbox" id="btnControl2"/>
-    <label class="btn" for="btnControl2"><img src="images/parcours87.jpg" id="btnLeft" width="140px" height="auto"></label></span>
+    <label class="btn" for="btnControl2"><img src="images/parcours45.jpg" id="btnLeft" width="150px" height="auto"></label></span>
+    <span class = h13><a><img src="images/parcours48.jpg" width="150px" height="auto"></a></span>
+    <span class = h14><input type="checkbox" id="btnControl3"/>
+    <label class="btn" for="btnControl3"><img src="images/parcours47.jpg" id="btnLeft" width="150px" height="auto"></label></span>
     <span class = h8><a><img src="images/symbole6.png" width="80px" height="auto"></a></span>
-    <span class = h9>les juges sont nommés<br>par les autres juges</br></span> 
-    <span class = h10>les juges sont nommés<br>par le gouvernement</br></span> 
-    <span class = h11>les juges sont nommés<br>par le parlement</br></span>   
-    <span class = h12>Les juges interprètent les lois. Lorsque les juges sont nommés par un autre pouvoir, cela démontre que les juges sont choisis en fonction de leurs opinions politiques pour interpréter la loi.</span> 
+    <span class = h9>les juges sont élus<br>par les électeurs</br></span> 
+    <span class = h10>les juges deviennent juges<br>sur concours</br></span> 
+    <span class = h11>les juges sont nommés<br>par les autres juges</br></span>   
+    <span class = h12>En théorie, les juges sont indépendants. Comme l'écrit Montesquieu dans De l'esprit des lois : "Les juges de la nation ne sont que la bouche qui prononce les paroles de la loi".<br><br>La façon dont ils accèdent à leur poste a son importance. Aux États-Unis, ils sont élus, et sont donc politisés. En France, ils y accèdent sur concours, mais on peut repprocher qu'ils forment une élite technicienne. Dans d'autres États, ils sont nommées, mais ce qui peut induire également une politisation et un corporatisme.</br></br></span>
+    <span class = h15>Choisis par qui sont nommés les juges : </span>
+    <span class="retour"><a href="jeu31.html"><img src="images/symbole9.png" width="70px" height="auto"></a></span>
+ 
+    <h2 id="header"><img src="images/red.png" width="1500px" height="auto"></h2>
+    <h1 id="header"><a href="index.html">comparative democracies</a></h1>
     
 </ul>
     <div id='affichageImage'></div>
 		
-		<nav>
+    <nav>
       <ul id="menu">
-        <li><a href="definition.html">la démocratie ?</a></li>
-        <li id="en-cours"><a href="jeu.html">explore la démocratie</a></li>
-        <li><a href="zooms.html">pour aller plus loin</a></li>
-        <li><a href="bibliotheque.html">bibliothèque</a></li>
-        <li><a href="info.html">info</a></li>
+        <li><a href="hein.html">la démocratie, hein ?</a></li>
+        <li id="en-cours"><a href="jeu.html">explore les démocraties</a></li>
+        <li><a href="approfondis.html">approfondis les démocraties</a></li>
+        <li><a href="schemas.html">schémas</a></li>
+        <li><a href="definitions.html">définitions</a></li>
+        <li><a href="info.html">info.</a></li>
         <li><a href="kit.html">kit</a></li>
-      </ul>
-      
+      </ul>   
     </nav>
 
   </div>
