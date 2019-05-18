@@ -13,21 +13,27 @@
 div#conteneur h1 /*comparative democraties*/
 {
   position: fixed;
-  left: 60px;
-  top: 10px; 
+  left: 50px;
+  top: -5px; 
 }
 div#conteneur h1 a /*comparative democraties police*/
 { 
   font-family: avenir; 
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: 0.7px;
-  color: black;
+  color: white;
   text-decoration: none;
+}
+div#conteneur h2 /*red*/
+{ 
+  position: fixed;
+  left: 0px;
+  top: -60px;
 }
 .h2 /*LE POUVOIR LÉGISLATIF*/
 {
-  position: fixed;
+  position: absolute;
   left: 400px;
   right: 400px;
   top: 220px;
@@ -38,9 +44,9 @@ div#conteneur h1 a /*comparative democraties police*/
   letter-spacing: 1px;
   color: black;
 } 
-.h4 /*texte*/
+.h4 /*texte 1*/
 {
-  position: fixed;
+  position: absolute;
   left: 350px;
   right: 350px;
   top: 300px;
@@ -54,12 +60,46 @@ div#conteneur h1 a /*comparative democraties police*/
   text-rendering: optimizeLegibility;
   word-break: break-word;
 }
+.h5 /*img1*/
+{
+  position: absolute;
+  left: 220px;
+  top: 510px;
+}
+.h6 /*texte 2*/
+{
+  position: absolute;
+  left: 350px;
+  right: 350px;
+  top: 650px;
+  text-align: center; 
+  font-family: avenir; 
+  font-weight: normal;
+  line-height: 24px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: black;
+  text-rendering: optimizeLegibility;
+  word-break: break-word;
+}
+.h7 /*img2*/
+{
+  position: absolute;
+  left: 300px;
+  top: 780px;
+}
+.h8 /*img2*/
+{
+  position: absolute;
+  left: 0px;
+  top: 970px;
+}
 .h3 a/*suivant*/
 {
-  position: fixed;
+  position: absolute;
   left: 450px;
   right: 450px;
-  top: 630px;
+  top: 950px;
 }  
 .h3 a/*suivant*/
 {
@@ -76,68 +116,73 @@ div#conteneur h1 a /*comparative democraties police*/
 {
   background-color: yellow;
 }
+.retour a/*flèche retour*/
+{
+  position: fixed;
+  left: 250px;
+  top: 220px;
+}
 ul#menu /*parcours & bibliothèque & info*/
 {
   position: fixed;
-  left: 0px;
-  top: 80px; 
-  list-style-type: none ;
-  float: left ;
-  text-align: left;
- }
-ul#menu /*parcours & bibliothèque & info*/
-{
-  position: fixed;
-  left: 0px;
-  top: 80px; 
+  left: -5px;
+  top: 60px; 
   list-style-type: none ;
   float: left ;
   text-decoration: none;
- }
+}
 ul#menu li 
 {
   display: inline;
-  padding : 0 1.5em;
+  padding : 0 1em;
    }
 ul#menu li a
 {
   font-family: avenir;
   font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 19px;
+  letter-spacing: 0.5px;
   text-decoration: none;
-  color: black;
+  color: white;
+  text-align: center;
   text-align: center;
 }
-ul#menu li a:hover
-{
-  color: grey;
-} 
 ul#menu #en-cours a
 {
-  color: grey;
+  color: white;
+  border-bottom: 3px solid;
 } 
-
+ul#menu li a:hover
+{
+  color: white;
+  border-bottom: 3px solid;
+} 
 	</style>
 	<body>
 	
   <div id="conteneur">
-		 <h1 id="header"><a href="comparative_democracies.html">comparative democracies</a></h1>
      <span class = h2>LE POUVOIR LÉGISLATIF</span>
-     <span class = h4>Le rôle du pouvoir législatif est de faire les lois, c’est-dire de débattre les lois, les rédiger et les voter.<br><br>Traditionnellement, le pouvoir législatif est confié à un le parlement qui représente l'ensemble des ciotyens. Le parlement est le plus souvent composée de deux assemblées ou "CHAMBRES" qui représentent de manière différentes les citoyens. La première assemblée représente démographiquement les citoyens. On découpe le territoire par rapport au nombre de citoyens et on procède à des élections.</br></br>En France, c'est l'Assemblée Nationale.</span> 
-     <span class = h3><a href="jeu16.html">choisis les élections du parlement</a></span>
+     <span class = h4>Le pouvoir législatif a un double rôle : celui de faire les lois (de débattre des lois, de les rédiger et de les voter) ainsi que de contrôler l'exécutif.<br><br>Traditionnellement, le pouvoir législatif est confié à un Parlement qui représente la Nation. Le Parlement est le plus souvent composé de deux assemblées ou « chambres » qui représentent de manières différentes la Nation.</span> 
+     <span class="h5"><img src="images/legislatif.png" width="850px" height="auto"></span>
+     <span class="h6">La première assemblée représente l’ensemble de la Nation. On divise le territoire par rapport au nombre d'habitants en circonscriptions et l'on procède à des élections. En France, c’est l’Assemblée nationale.</span> 
+     <span class="h7"><img src="images/legislatif2.png" width="700px" height="auto"></span>
+     <span class="h8"><img src="images/white.png" width="1000px" height="auto"></span>
+     <span class="retour"><a href="jeu14ter.html"><img src="images/symbole9.png" width="70px" height="auto"></a></span>
+     <span class = h3><a href="jeu16.html">élis la première chambre</a></span>
+     <h2 id="header"><img src="images/red.png" width="1500px" height="auto"></h2>
+     <h1 id="header"><a href="index.html">comparative democracies</a></h1>
      
 		
-		<nav>
+    <nav>
       <ul id="menu">
-        <li><a href="definition.html">la démocratie ?</a></li>
-        <li id="en-cours"><a href="jeu.html">explore la démocratie</a></li>
-        <li><a href="zooms.html">pour aller plus loin</a></li>
-        <li><a href="bibliotheque.html">bibliothèque</a></li>
-        <li><a href="info.html">info</a></li>
+        <li><a href="hein.html">la démocratie, hein ?</a></li>
+        <li id="en-cours"><a href="jeu.html">explore les démocraties</a></li>
+        <li><a href="approfondis.html">approfondis les démocraties</a></li>
+        <li><a href="schemas.html">schémas</a></li>
+        <li><a href="definitions.html">définitions</a></li>
+        <li><a href="info.html">info.</a></li>
         <li><a href="kit.html">kit</a></li>
-      </ul>
-      
+      </ul>   
     </nav>
 
   </div>

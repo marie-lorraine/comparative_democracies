@@ -13,17 +13,23 @@
 div#conteneur h1 /*comparative democraties*/
 {
   position: fixed;
-  left: 60px;
-  top: 10px; 
+  left: 50px;
+  top: -5px; 
 }
 div#conteneur h1 a /*comparative democraties police*/
 { 
   font-family: avenir; 
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: 0.7px;
-  color: black;
+  color: white;
   text-decoration: none;
+}
+div#conteneur h2 /*red*/
+{ 
+  position: fixed;
+  left: 0px;
+  top: -60px;
 }
 .h2 /*CHOISI QUI PEUT ÊTRE ÉLU*/
 {
@@ -43,7 +49,7 @@ div#conteneur h1 a /*comparative democraties police*/
   position: fixed;
   left: 500px;
   right: 500px;
-  top: 580px;
+  top: 590px;
 }  
 .h3 a/*suivant*/
 {
@@ -63,42 +69,32 @@ div#conteneur h1 a /*comparative democraties police*/
 .h4 /*image 1*/
 {
   position: fixed;
-  left: 450px;
+  left: 460px;
   top: 320px;
 }
 .h5 /*image 1*/
 {
   position: fixed;
-  left: 450px;
+  left: 460px;
   top: 320px;
 }
 .h6 /*image 2*/
 {
   position: fixed;
-  left: 640px;
+  left: 680px;
   top: 320px;
 }
 .h7 /*image 2*/
 {
   position: fixed;
-  left: 640px;
+  left: 680px;
   top: 320px;
-}
-.h7 a/*image*/
-{
-  opacity: 1;
-}
-.h8 a/*ampoule*/
-{
-  position: fixed;
-  left: 850px;
-  top: 270px;
 }
 .h9 /*texte 1*/
 {
   position: fixed;
-  left: 430px;
-  top: 500px;
+  left: 460px;
+  top: 530px;
   text-align: center; 
   font-family: avenir; 
   font-weight: bold;
@@ -111,8 +107,8 @@ div#conteneur h1 a /*comparative democraties police*/
 .h10 /*texte 2*/
 {
   position: fixed;
-  left: 640px;
-  top: 500px;
+  left: 682px;
+  top: 530px;
   text-align: center; 
   font-family: avenir; 
   font-weight: bold;
@@ -122,12 +118,18 @@ div#conteneur h1 a /*comparative democraties police*/
   text-rendering: optimizeLegibility;
   word-break: break-word;
 }
+.h8 a/*ampoule*/
+{
+  position: fixed;
+  left: 900px;
+  top: 290px;
+}
 .h11 /*texte ampoule*/
 {
   position: fixed;
-  left: 885px;
-  right: 150px;
-  top: 330px;
+  left: 930px;
+  right: 120px;
+  top: 350px;
   text-align: left; 
   font-family: times; 
   font-weight: normal;
@@ -141,7 +143,7 @@ div#conteneur h1 a /*comparative democraties police*/
 .h12 /*sous-titre*/
 {
   position: fixed;
-  left: 520px;
+  left: 505px;
   right: 250px;
   top: 270px;
   text-align: left; 
@@ -154,47 +156,47 @@ div#conteneur h1 a /*comparative democraties police*/
   text-rendering: optimizeLegibility;
   word-break: break-word;
 }
-ul#menu /*parcours & bibliothèque & info*/
+.retour a/*flèche retour*/
 {
   position: fixed;
-  left: 0px;
-  top: 80px; 
-  list-style-type: none ;
-  float: left ;
-  text-align: left;
+  left: 250px;
+  top: 220px;
 }
 ul#menu /*parcours & bibliothèque & info*/
 {
   position: fixed;
-  left: 0px;
-  top: 80px; 
+  left: -5px;
+  top: 60px; 
   list-style-type: none ;
   float: left ;
   text-decoration: none;
- }
+}
 ul#menu li 
 {
   display: inline;
-  padding : 0 1.5em;
+  padding : 0 1em;
    }
 ul#menu li a
 {
   font-family: avenir;
   font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 19px;
+  letter-spacing: 0.5px;
   text-decoration: none;
-  color: black;
+  color: white;
+  text-align: center;
   text-align: center;
 }
-ul#menu li a:hover
-{
-  color: grey;
-} 
 ul#menu #en-cours a
 {
-  color: grey;
+  color: white;
+  border-bottom: 3px solid;
 } 
+ul#menu li a:hover
+{
+  color: white;
+  border-bottom: 3px solid;
+}  
 
 /*images qui changent */
 #btnControl {
@@ -217,34 +219,36 @@ ul#menu #en-cours a
 	<body>
 	
   <div id="conteneur">
-		<h1 id="header"><a href="comparative_democracies.html">comparative democracies</a></h1>
     <span class = h2>CHOISIS QUI PEUT ÊTRE ÉLU</span>
     <span class = h3><a href="jeu14.html">suivant</a></span>
-    <span class = h4><a><img src="images/parcours64.jpg" width="140px" height="auto"></a></span>
+    <span class = h4><a><img src="images/parcours6.jpg" width="140px" height="auto"></a></span>
     <span class = h5><input type="checkbox" id="btnControl"/>
-    <label class="btn" for="btnControl"><img src="images/parcours63.jpg" id="btnLeft" width="140px" height="auto"></label></span>
-    <span class = h6><a><img src="images/parcours66.jpg" width="140px" height="auto"></a></span>
+    <label class="btn" for="btnControl"><img src="images/parcours5.jpg" id="btnLeft" width="140px" height="auto"></label></span>
+    <span class = h6><a><img src="images/parcours16.jpg" width="140px" height="auto"></a></span>
     <span class = h7><input type="checkbox" id="btnControl2"/>
-    <label class="btn" for="btnControl2"><img src="images/parcours65.jpg" id="btnLeft" width="140px" height="auto"></label></span>
+    <label class="btn" for="btnControl2"><img src="images/parcours15.jpg" id="btnLeft" width="140px" height="auto"></label></span>
     <span class = h8><a><img src="images/symbole6.png" width="80px" height="auto"></a></span>
-    <span class = h9>carrière indifférente</span> 
-    <span class = h10>études et carrière spécialisées</span> 
-    <span class = h11>En France, tout citoyen peut se présenter. Mais comme dans beaucoup d’autres pays, on remarque que les élus font déjà preuve, pour la plupart, d’une carrière dans la haute administration ou dans la politique.</br></br></span> 
-    <span class = h12>Choisis les études des citoyens.</span>  
+    <span class = h9>études et carrière<br>indifférentes</br></span> 
+    <span class = h10>études et carrière<br>spécialisées</br></span> 
+    <span class = h11>En France, tout citoyen peut se présenter indépendamment de sa carrière ou de ses études. Mais comme dans beaucoup d’autres pays, on remarque que les élus font déjà preuve, pour la plupart, d’une carrière dans la haute administration ou dans la politique.</br></br></span> 
+    <span class = h12>Choisis le niveau d'éducation des élus :</span> 
+    <span class="retour"><a href="jeu12.html"><img src="images/symbole9.png" width="70px" height="auto"></a></span> 
+    <h2 id="header"><img src="images/red.png" width="1500px" height="auto"></h2>
+    <h1 id="header"><a href="index.html">comparative democracies</a></h1>
     
 </ul>
     <div id='affichageImage'></div>
 		
-		<nav>
+    <nav>
       <ul id="menu">
-        <li><a href="definition.html">la démocratie ?</a></li>
-        <li id="en-cours"><a href="jeu.html">explore la démocratie</a></li>
-        <li><a href="zooms.html">pour aller plus loin</a></li>
-        <li><a href="bibliotheque.html">bibliothèque</a></li>
-        <li><a href="info.html">info</a></li>
+        <li><a href="hein.html">la démocratie, hein ?</a></li>
+        <li id="en-cours"><a href="jeu.html">explore les démocraties</a></li>
+        <li><a href="approfondis.html">approfondis les démocraties</a></li>
+        <li><a href="schemas.html">schémas</a></li>
+        <li><a href="definitions.html">définitions</a></li>
+        <li><a href="info.html">info.</a></li>
         <li><a href="kit.html">kit</a></li>
-      </ul>
-      
+      </ul>   
     </nav>
 
   </div>

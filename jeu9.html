@@ -13,17 +13,23 @@
 div#conteneur h1 /*comparative democraties*/
 {
   position: fixed;
-  left: 60px;
-  top: 10px; 
+  left: 50px;
+  top: -5px; 
 }
 div#conteneur h1 a /*comparative democraties police*/
 { 
   font-family: avenir; 
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: 0.7px;
-  color: black;
+  color: white;
   text-decoration: none;
+}
+div#conteneur h2 /*red*/
+{ 
+  position: fixed;
+  left: 0px;
+  top: -60px;
 }
 .h2 /*CHOISIS QUI PEUT ÊTRE ÉLU*/
 {
@@ -43,7 +49,7 @@ div#conteneur h1 a /*comparative democraties police*/
   position: fixed;
   left: 500px;
   right: 500px;
-  top: 580px;
+  top: 590px;
 }  
 .h3 a/*suivant*/
 {
@@ -63,42 +69,36 @@ div#conteneur h1 a /*comparative democraties police*/
 .h4 /*image 1*/
 {
   position: fixed;
-  left: 450px;
+  left: 470px;
   top: 320px;
 }
 .h5 /*image 1*/
 {
   position: fixed;
-  left: 450px;
+  left: 470px;
   top: 320px;
 }
 .h6 /*image 2*/
 {
   position: fixed;
-  left: 640px;
+  left: 670px;
   top: 320px;
 }
 .h7 /*image 2*/
 {
   position: fixed;
-  left: 640px;
+  left: 670px;
   top: 320px;
 }
 .h7 a/*image*/
 {
   opacity: 1;
 }
-.h8 a/*ampoule*/
-{
-  position: fixed;
-  left: 850px;
-  top: 270px;
-}
 .h9 /*texte 1*/
 {
   position: fixed;
-  left: 490px;
-  top: 500px;
+  left: 510px;
+  top: 530px;
   text-align: center; 
   font-family: avenir; 
   font-weight: bold;
@@ -111,8 +111,8 @@ div#conteneur h1 a /*comparative democraties police*/
 .h10 /*texte 2*/
 {
   position: fixed;
-  left: 670px;
-  top: 500px;
+  left: 710px;
+  top: 530px;
   text-align: center; 
   font-family: avenir; 
   font-weight: bold;
@@ -122,12 +122,18 @@ div#conteneur h1 a /*comparative democraties police*/
   text-rendering: optimizeLegibility;
   word-break: break-word;
 }
+.h8 a/*ampoule*/
+{
+  position: fixed;
+  left: 900px;
+  top: 290px;
+}
 .h11 /*texte ampoule*/
 {
   position: fixed;
-  left: 885px;
-  right: 150px;
-  top: 330px;
+  left: 930px;
+  right: 120px;
+  top: 350px;
   text-align: left; 
   font-family: times; 
   font-weight: normal;
@@ -141,7 +147,7 @@ div#conteneur h1 a /*comparative democraties police*/
 .h12 /*sous-titre*/
 {
   position: fixed;
-  left: 520px;
+  left: 550px;
   right: 250px;
   top: 270px;
   text-align: left; 
@@ -154,47 +160,47 @@ div#conteneur h1 a /*comparative democraties police*/
   text-rendering: optimizeLegibility;
   word-break: break-word;
 }
-ul#menu /*parcours & bibliothèque & info*/
+.retour a/*flèche retour*/
 {
   position: fixed;
-  left: 0px;
-  top: 80px; 
-  list-style-type: none ;
-  float: left ;
-  text-align: left;
+  left: 250px;
+  top: 220px;
 }
 ul#menu /*parcours & bibliothèque & info*/
 {
   position: fixed;
-  left: 0px;
-  top: 80px; 
+  left: -5px;
+  top: 60px; 
   list-style-type: none ;
   float: left ;
   text-decoration: none;
- }
+}
 ul#menu li 
 {
   display: inline;
-  padding : 0 1.5em;
+  padding : 0 1em;
    }
 ul#menu li a
 {
   font-family: avenir;
   font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 19px;
+  letter-spacing: 0.5px;
   text-decoration: none;
-  color: black;
+  color: white;
+  text-align: center;
   text-align: center;
 }
-ul#menu li a:hover
-{
-  color: grey;
-} 
 ul#menu #en-cours a
 {
-  color: grey;
+  color: white;
+  border-bottom: 3px solid;
 } 
+ul#menu li a:hover
+{
+  color: white;
+  border-bottom: 3px solid;
+}  
 
 /*images qui changent */
 #btnControl {
@@ -217,7 +223,6 @@ ul#menu #en-cours a
 	<body>
 	
   <div id="conteneur">
-		<h1 id="header"><a href="comparative_democracies.html">comparative democracies</a></h1>
     <span class = h2>CHOISIS QUI PEUT ÊTRE ÉLU</span>
     <span class = h3><a href="jeu10.html">suivant</a></span>
     <span class = h4><a><img src="images/parcours2.jpg" width="140px" height="auto"></a></span>
@@ -227,24 +232,27 @@ ul#menu #en-cours a
     <span class = h7><input type="checkbox" id="btnControl2"/>
     <label class="btn" for="btnControl2"><img src="images/parcours3.jpg" id="btnLeft" width="140px" height="auto"></label></span>
     <span class = h8><a><img src="images/symbole6.png" width="80px" height="auto"></a></span>
-    <span class = h9>femmes</span> 
-    <span class = h10>hommes</span> 
-    <span class = h11>Bien que les femmes sont éligibles, on remarque qu’elles sont minoritaires parmi les élus. En France, on applique dans certaines élections, comme les élections départementales, le principe de parité. On vote alors pour un binôme homme-femme.</span> 
-    <span class = h12>Choisis le sexe des citoyens.</span>   
+    <span class = h9>femme</span> 
+    <span class = h10>homme</span> 
+    <span class = h11>En France, bien que les femmes soient éligibles, on remarque qu’elles sont minoritaires parmi les élus. En 1999, on a révisé la Constitution pour ajouter que la loi «doit favoriser l’égal accès des hommes et des femmes aux mandats électoraux et aux fonctions électives».</span> 
+    <span class = h12>Choisis le sexe des élus :</span>
+    <span class="retour"><a href="jeu8.html"><img src="images/symbole9.png" width="70px" height="auto"></a></span>   
+    <h2 id="header"><img src="images/red.png" width="1500px" height="auto"></h2>
+    <h1 id="header"><a href="index.html">comparative democracies</a></h1>
     
 </ul>
     <div id='affichageImage'></div>
 		
-		<nav>
+    <nav>
       <ul id="menu">
-        <li><a href="definition.html">la démocratie ?</a></li>
-        <li id="en-cours"><a href="jeu.html">explore la démocratie</a></li>
-        <li><a href="zooms.html">pour aller plus loin</a></li>
-        <li><a href="bibliotheque.html">bibliothèque</a></li>
-        <li><a href="info.html">info</a></li>
+        <li><a href="hein.html">la démocratie, hein ?</a></li>
+        <li id="en-cours"><a href="jeu.html">explore les démocraties</a></li>
+        <li><a href="approfondis.html">approfondis les démocraties</a></li>
+        <li><a href="schemas.html">schémas</a></li>
+        <li><a href="definitions.html">définitions</a></li>
+        <li><a href="info.html">info.</a></li>
         <li><a href="kit.html">kit</a></li>
-      </ul>
-      
+      </ul>   
     </nav>
 
   </div>
