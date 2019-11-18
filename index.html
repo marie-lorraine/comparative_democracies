@@ -1,110 +1,147 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <link rel="icon" type="image/png" href="favicon.png"> 
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700&display=swap" rel="stylesheet">
   </head>
   
   <style type="text/css">
   body
 {
-  background-color: #E54230;
+  background-color: #E44230;
 }
-
 div#conteneur h1 /*comparative democraties*/
 {
   position: fixed;
-  left: 50px;
-  top: -5px; 
+  left: 35px;
+  top: 0px; 
 }
 div#conteneur h1 a /*comparative democraties police*/
 { 
-  font-family: avenir; 
-  font-weight: bolder;
-  font-size: 22px;
-  letter-spacing: 0.7px;
+  font-family: hind; 
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
   color: white;
   text-decoration: none;
 }
-.h2 /*texte*/
+.carre{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width:  1600px;
+  height: 1900px;
+  background: #E44230;
+}
+.texte 
 { 
   position: absolute;
   left: 250px;
   right: 250px;
-  top: 350px;
-  font-family: avenir; 
-  font-weight: bolder;
-  font-size: 35px;
-  letter-spacing: 1px;
-  color: white;
+  top: 400px;
+  font-family: hind; 
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  color: #333333;
   text-align: center;
 }
-.h3 a /*flèche*/
+.texte2 a 
 { 
   position: absolute;
-  left: 570px;
-  top: 500px;
+  left: 677px;
+  top: 448px;
+  font-family: hind; 
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
 }
-.h3 a:hover 
+.texte2 a:hover 
 {
- -webkit-transform:scale(1.25); /* Safari and Chrome */
-    -moz-transform:scale(1.25); /* Firefox */
-    -ms-transform:scale(1.25); /* IE 9 */
-    -o-transform:scale(1.25); /* Opera */
-     transform:scale(1.25);
+  border-bottom: 4.5px solid;
 }
+.pin a 
+{ 
+  position: fixed;
+  left: 530px;
+  top: 225px;
+
+  transition: .5s ease-in-out;
+}
+.pin a:hover 
+{
+  -webkit-transform: rotate(720deg) scale(0.75);
+}
+.map 
+{ 
+  position: fixed;
+  left : -20px;
+  top : -50px;
+  opacity: 0.5;
+}
+
 ul#menu /*parcours & bibliothèque & info*/
 {
   position: fixed;
   left: -5px;
-  top: 60px; 
+  top: 70px; 
   list-style-type: none ;
-  float: left ;
   text-decoration: none;
- }
+  display: inline;
+}
 ul#menu li 
 {
   display: inline;
-  padding : 0 1em;
+  margin-right: 35px ;
    }
 ul#menu li a
 {
-  font-family: avenir;
-  font-weight: bold;
-  font-size: 19px;
-  letter-spacing: 0.5px;
+  font-family: hind;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
   text-decoration: none;
   color: white;
   text-align: center;
 }
+ul#menu #en-cours a
+{
+  color: white;
+  font-weight: 300;
+  opacity: 0.5;
+} 
 ul#menu li a:hover
 {
   color: white;
-  border-bottom: 3px solid;
+  border-bottom: 4.5px solid;
 } 
-ul#menu #en-cours a
-{
-  color: grey;
-} 
+
 
   </style>
   <body>
   
   <div id="conteneur">
-     <h1 id="header"><a href="comparative_democracies.html">comparative democracies</a></h1>
-     <span class = h2>"On vit en démocratie."<br>Mais c’est quoi la démocratie ?</br></span>
-     <span class = h3><a href="hein.html"><img src="images/symboles10.png" width="130px" height="auto"></a></span>
+     <span class = carre></span>
+     <h1 id="header"><a href="index.html">comparative democracies</a></h1>
+      <span class = texte>"On vit en démocratie."<br>Mais c’est quoi la démocratie ?</br></span>
+      <span class = texte2><a href="hein.html">démocratie</a></span>
+
+     <span class = pin><a href="hein.html"><img src="images/pin.png" width="150px" height="auto"></a></span>
+    
 
     <nav>
       <ul id="menu">
-      	<li><a href="hein.html">la démocratie, hein ?</a></li>
+        <li><a href="hein.html">la democratie, hein ?</a></li>
         <li><a href="jeu.html">explore les démocraties</a></li>
         <li><a href="approfondis.html">approfondis les démocraties</a></li>
         <li><a href="schemas.html">schémas</a></li>
         <li><a href="definitions.html">définitions</a></li>
+        <li><a href="kit.html">kit<sup>+</sup></a></li>
         <li><a href="info.html">info.</a></li>
-        <li><a href="kit.html">kit</a></li>     
-      </ul>
-      
+      </ul>    
     </nav>
 
   </div>

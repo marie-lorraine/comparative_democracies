@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	<link rel="icon" type="image/png" href="favicon.png" />
+  <head>
+  <link rel="icon" type="image/png" href="favicon.png"> 
+  <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700&display=swap" rel="stylesheet"> 
   </head>
   
   <style type="text/css">
-	body
+  body
 {
   background-color: white;
 }
-
 div#conteneur h1 /*comparative democraties*/
 {
   position: fixed;
-  left: 50px;
-  top: -5px; 
+  left: 35px;
+  top: 0px; 
 }
 div#conteneur h1 a /*comparative democraties police*/
 { 
-  font-family: avenir; 
-  font-weight: bolder;
-  font-size: 22px;
-  letter-spacing: 0.7px;
+  font-family: hind; 
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
   color: white;
   text-decoration: none;
 }
-div#conteneur h2 /*red*/
-{ 
+.carre{
   position: fixed;
   left: 0px;
-  top: -60px;
+  top: 0px;
+  width:  1600px;
+  height: 150px;
+  background: #E44230;
 }
 .h2 /*CHOISI CHOISIS QUI PEUT ÊTRE ÉLU*/
 {
@@ -38,8 +40,8 @@ div#conteneur h2 /*red*/
   right: 400px;
   top: 220px;
   text-align: center; 
-  font-family: avenir; 
-  font-weight: bold;
+  font-family: hind; 
+  font-weight: 600;
   font-size: 25px;
   letter-spacing: 1px;
   color: black;
@@ -54,8 +56,8 @@ div#conteneur h2 /*red*/
 .h3 a/*suivant*/
 {
   text-align: center; 
-  font-family: avenir; 
-  font-weight: bold;
+  font-family: hind; 
+  font-weight: 600;
   font-size: 18px;
   letter-spacing: 1px;
   color: black;
@@ -64,7 +66,7 @@ div#conteneur h2 /*red*/
 }
 .h3 a:hover/*suivant*/
 {
-  background-color: yellow;
+  color :#B3B3B3;
 }
 .h4 /*image 1*/
 {
@@ -100,8 +102,8 @@ div#conteneur h2 /*red*/
   left: 515px;
   top: 530px;
   text-align: center; 
-  font-family: avenir; 
-  font-weight: bold;
+  font-family: hind; 
+  font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
   color: black;
@@ -114,8 +116,8 @@ div#conteneur h2 /*red*/
   left: 735px;
   top: 530px;
   text-align: center; 
-  font-family: avenir; 
-  font-weight: bold;
+  font-family: hind; 
+  font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
   color: black;
@@ -147,12 +149,12 @@ div#conteneur h2 /*red*/
 .h12 /*sous-titre*/
 {
   position: fixed;
-  left: 420px;
+  left: 485px;
   right: 250px;
   top: 270px;
   text-align: left; 
-  font-family: avenir; 
-  font-weight: normal;
+  font-family: hind; 
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 1px;
@@ -166,41 +168,46 @@ div#conteneur h2 /*red*/
   left: 250px;
   top: 220px;
 }
+
 ul#menu /*parcours & bibliothèque & info*/
 {
   position: fixed;
   left: -5px;
-  top: 60px; 
+  top: 70px; 
   list-style-type: none ;
-  float: left ;
   text-decoration: none;
+  display: inline;
 }
 ul#menu li 
 {
   display: inline;
-  padding : 0 1em;
-   }
+  margin-right: 35px ;
+}
 ul#menu li a
 {
-  font-family: avenir;
-  font-weight: bold;
-  font-size: 19px;
-  letter-spacing: 0.5px;
+  font-family: hind;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
   text-decoration: none;
   color: white;
-  text-align: center;
   text-align: center;
 }
 ul#menu #en-cours a
 {
   color: white;
-  border-bottom: 3px solid;
+  font-weight: 300;
+  opacity: 0.5;
 } 
 ul#menu li a:hover
 {
   color: white;
-  border-bottom: 3px solid;
+  border-bottom: 4.5px solid;
 } 
+.grey
+{
+  color: grey;
+}   
 
 /*images qui changent */
 #btnControl {
@@ -237,23 +244,22 @@ ul#menu li a:hover
     <span class = h11>Payer l’impôt a longtemps été un critère de sélection. En France, en 1791, les électeurs qui payaient le moins d’impôts votaient pour ceux qui payait un impôt plus important, on appelle ça une élection à plusieurs degrés.<br><br>Aujourd'hui, en France et dans d'autres pays, si un citoyen a été condamné pour fraude fiscale, il peut être inéligible.</br></br></span>
     <span class = h12>Choisis s'il est nécessaire de payer un impôt :</span>  
     <span class="retour"><a href="jeu11.html"><img src="images/symbole9.png" width="70px" height="auto"></a></span>
-    <h2 id="header"><img src="images/red.png" width="1500px" height="auto"></h2>
-    <h1 id="header"><a href="index.html">comparative democracies</a></h1>
+    <span class = carre></span>
+    <h1 id="header"><a href="index.html">comparative democracies</a></h1>  
 
-</ul>
-    <div id='affichageImage'></div>
+
 		
-    <nav>
+		 <nav>
       <ul id="menu">
         <li><a href="hein.html">la démocratie, hein ?</a></li>
         <li id="en-cours"><a href="jeu.html">explore les démocraties</a></li>
         <li><a href="approfondis.html">approfondis les démocraties</a></li>
         <li><a href="schemas.html">schémas</a></li>
         <li><a href="definitions.html">définitions</a></li>
+        <li><a href="kit.html">kit<sup>+</sup></a></li>
         <li><a href="info.html">info.</a></li>
-        <li><a href="kit.html">kit</a></li>
-      </ul>   
-    </nav>
+      </ul>
+          </nav>
 
   </div>
   </body>

@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	<link rel="icon" type="image/png" href="favicon.png" />
+  <head>
+  <link rel="icon" type="image/png" href="favicon.png"> 
+  <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700&display=swap" rel="stylesheet"> 
   </head>
   
   <style type="text/css">
-	body
+  body
 {
   background-color: white;
 }
-
 div#conteneur h1 /*comparative democraties*/
 {
   position: fixed;
-  left: 50px;
-  top: -5px; 
+  left: 35px;
+  top: 0px; 
 }
 div#conteneur h1 a /*comparative democraties police*/
 { 
-  font-family: avenir; 
-  font-weight: bolder;
-  font-size: 22px;
-  letter-spacing: 0.7px;
+  font-family: hind; 
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
   color: white;
   text-decoration: none;
 }
-div#conteneur h2 /*red*/
-{ 
+.carre{
   position: fixed;
   left: 0px;
-  top: -60px;
+  top: 0px;
+  width:  1600px;
+  height: 150px;
+  background: #E44230;
 }
 .h2 /*LA SÉPARATION DES POUVOIRS*/
 {
@@ -38,8 +40,8 @@ div#conteneur h2 /*red*/
   right: 400px;
   top: 220px;
   text-align: center; 
-  font-family: avenir; 
-  font-weight: bold;
+  font-family: hind; 
+  font-weight: 600;
   font-size: 25px;
   letter-spacing: 1px;
   color: black;
@@ -51,8 +53,8 @@ div#conteneur h2 /*red*/
   right: 400px;
   top: 300px;
   text-align: center; 
-  font-family: avenir; 
-  font-weight: normal;
+  font-family: hind; 
+  font-weight: 400;
   line-height: 24px;
   font-size: 18px;
   letter-spacing: 1px;
@@ -66,8 +68,8 @@ div#conteneur h2 /*red*/
   left: 295px;
   top: 440px;
   text-align: center; 
-  font-family: avenir; 
-  font-weight: normal;
+  font-family: hind; 
+  font-weight: 400;
   font-size: 18px;
   letter-spacing: 1px;
   color: black;
@@ -78,8 +80,8 @@ div#conteneur h2 /*red*/
   left: 550px;
   top: 440px;
   text-align: center; 
-  font-family: avenir; 
-  font-weight: normal;
+  font-family: hind; 
+  font-weight: 400;
   font-size: 18px;
   letter-spacing: 1px;
   color: black;
@@ -90,78 +92,60 @@ div#conteneur h2 /*red*/
   left: 810px;
   top: 440px;
   text-align: center; 
-  font-family: avenir; 
-  font-weight: normal;
+  font-family: hind; 
+  font-weight: 400;
   font-size: 18px;
   letter-spacing: 1px;
   color: black;
 }
-.h8 /*FLECHE*/
+.h8 /*image 1*/
 {
   position: fixed;
-  left: 360px;
-  top: 490px;
-} 
-.h9 /*FLECHE*/
-{
-  position: fixed;
-  left: 610px;
-  top: 490px;
-} 
-.h10 /*FLECHE*/
-{
-  position: fixed;
-  left: 880px;
-  top: 490px;
-} 
-.h11 /*pouvoir législatif def*/
-{
-  position: fixed;
-  left: 330px;
-  top: 540px;
-  text-align: center; 
-  font-family: avenir; 
-  font-weight: normal;
-  font-size: 18px;
-  letter-spacing: 1px;
-  color: black;
+  left: 310px;
+  top: 480px;
 }
-.h12 /*pouvoir éxecutif def*/
+.h9 /*image 1*/
 {
   position: fixed;
-  left: 560px;
-  top: 540px;
-  text-align: center; 
-  font-family: avenir; 
-  font-weight: normal;
-  font-size: 18px;
-  letter-spacing: 1px;
-  color: black;
+  left: 310px;
+  top: 480px;
 }
-.h13 /*pouvoir judiciaire def*/
+.h10 /*image 2*/
 {
   position: fixed;
-  left: 790px;
-  top: 540px;
-  text-align: center; 
-  font-family: avenir; 
-  font-weight: normal;
-  font-size: 18px;
-  letter-spacing: 1px;
-  color: black;
+  left: 565px;
+  top: 480px;
+}
+.h11 /*image 2*/
+{
+  position: fixed;
+  left: 565px;
+  top: 480px;
+}
+.h12 /*image 3*/
+{
+  position: fixed;
+  left: 830px;
+  top: 480px;
+}
+.h13 /*image 3*/
+{
+  position: fixed;
+  left: 830px;
+  top: 480px;
 }
 .h3 a/*suivant*/
 {
   position: fixed;
   left: 500px;
   right: 500px;
-  top: 600px;
+  top: 650px;
 }  
 .h3 a/*suivant*/
 {
   text-align: center; 
-  font-family: avenir; 
-  font-weight: bold;
+  font-family: hind; 
+  font-weight: 600;
   font-size: 18px;
   letter-spacing: 1px;
   color: black;
@@ -170,7 +154,7 @@ div#conteneur h2 /*red*/
 }
 .h3 a:hover/*suivant*/
 {
-  background-color: yellow;
+  color : #B3B3B3;
 }
 .retour a/*flèche retour*/
 {
@@ -178,41 +162,65 @@ div#conteneur h2 /*red*/
   left: 250px;
   top: 220px;
 }
+
 ul#menu /*parcours & bibliothèque & info*/
 {
   position: fixed;
   left: -5px;
-  top: 60px; 
+  top: 70px; 
   list-style-type: none ;
-  float: left ;
   text-decoration: none;
+  display: inline;
 }
 ul#menu li 
 {
   display: inline;
-  padding : 0 1em;
-   }
+  margin-right: 35px ;
+}
 ul#menu li a
 {
-  font-family: avenir;
-  font-weight: bold;
-  font-size: 19px;
-  letter-spacing: 0.5px;
+  font-family: hind;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
   text-decoration: none;
   color: white;
-  text-align: center;
   text-align: center;
 }
 ul#menu #en-cours a
 {
   color: white;
-  border-bottom: 3px solid;
+  font-weight: 300;
+  opacity: 0.5;
 } 
 ul#menu li a:hover
 {
   color: white;
-  border-bottom: 3px solid;
+  border-bottom: 4.5px solid;
 } 
+.grey
+{
+  color: grey;
+}  
+/*images qui changent */
+#btnControl {
+    display: none;
+}
+#btnControl:checked + label > img {
+    opacity: 0;
+}
+#btnControl2 {
+    display: none;
+}
+#btnControl2:checked + label > img {
+    opacity: 0;
+}
+#btnControl3 {
+    display: none;
+}
+#btnControl3:checked + label > img {
+    opacity: 0;
+}
 
 	</style>
 	<body>
@@ -223,29 +231,33 @@ ul#menu li a:hover
      <span class = h5>le pouvoir législatif</span>
      <span class = h6>le pouvoir exécutif</span>
      <span class = h7>le pouvoir judiciaire</span>
-     <span class = h8><img src="images/symboles10.png" width="50px" height="auto"></span>
-     <span class = h9><img src="images/symboles10.png" width="50px" height="auto"></span>
-     <span class = h10><img src="images/symboles10.png" width="50px" height="auto"></span>
-     <span class = h11>faire les lois</span>
-     <span class = h12>appliquer les lois</span>
-     <span class = h13>juger du respect des lois</span>
+     <span class = h8><a><img src="images/fleche2.jpg" width="140px" height="auto"></a></span>
+    <span class = h9><input type="checkbox" id="btnControl"/>
+    <label class="btn" for="btnControl"><img src="images/fleche1.jpg" id="btnLeft" width="140px" height="auto"></label></span>
+    <span class = h10><a><img src="images/fleche4.jpg" width="140px" height="auto"></a></span>
+    <span class = h11><input type="checkbox" id="btnControl2"/>
+    <label class="btn" for="btnControl2"><img src="images/fleche3.jpg" id="btnLeft" width="140px" height="auto"></label></span>
+    <span class = h12><a><img src="images/fleche6.jpg" width="140px" height="auto"></a></span>
+    <span class = h13><input type="checkbox" id="btnControl3"/>
+    <label class="btn" for="btnControl3"><img src="images/fleche5.jpg" id="btnLeft" width="140px" height="auto"></label></span>
      <span class = h3><a href="jeu14ter.html">suivant</a></span>
      <span class="retour"><a href="jeu14.html"><img src="images/symbole9.png" width="70px" height="auto"></a></span>
-     <h2 id="header"><img src="images/red.png" width="1500px" height="auto"></h2>
-     <h1 id="header"><a href="index.html">comparative democracies</a></h1>
-     
+     <span class = carre></span>
+     <h1 id="header"><a href="index.html">comparative democracies</a></h1>  
+
+
 		
-    <nav>
+		 <nav>
       <ul id="menu">
         <li><a href="hein.html">la démocratie, hein ?</a></li>
         <li id="en-cours"><a href="jeu.html">explore les démocraties</a></li>
         <li><a href="approfondis.html">approfondis les démocraties</a></li>
         <li><a href="schemas.html">schémas</a></li>
         <li><a href="definitions.html">définitions</a></li>
+        <li><a href="kit.html">kit<sup>+</sup></a></li>
         <li><a href="info.html">info.</a></li>
-        <li><a href="kit.html">kit</a></li>
-      </ul>   
-    </nav>
+      </ul>
+          </nav>
 
   </div>
   </body>
