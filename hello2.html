@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <head><title>hello2</title>
+  <link href="https://fonts.googleapis.com/css?family=Butcherman&display=swap" rel="stylesheet">
+</head>
+  
+<style type="text/css">
+  body
+  { background-color: black;}
+
+  .h1 /*entrer le code*/
+  { 
+  font-family: butcherman; 
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  }
+
+.h3
+  { 
+  font-family: butcherman; 
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  } 
+
+</style>
+
+<body>
+<div id="conteneur">
+     <span class="h1">entrer le code</span>
+
+<SCRIPT LANGUAGE="JavaScript">
+function passe() {
+var mot=document.form1.passew.value
+if (mot=="toto") {window.location="toto.htm"; }
+else {alert("vous ne sortirez jamais"); } 
+}
+</SCRIPT>
+
+<FORM name="form1">
+
+  <INPUT type='text' name="passew" size=50><BR><BR>
+  <span class="h3"><INPUT type='button' value='Entrer' onClick="passe()"><label class="button" for="button"></label></span>
+
+</FORM>
+
+</div>
+</body>
+
+</html>
